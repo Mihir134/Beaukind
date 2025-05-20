@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beaukind Navbar</title>
+    <link rel="stylesheet" href="landingpage.css" />
+    <link rel="stylesheet" href="productpage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- Scrolling announcement bar -->
+    <div class="announcement">
+        <marquee behavior="scroll" direction="left">
+            &#9733; 20% Discount on all products for first orders &#9733;
+            20% Discount on all products for first orders &#9733;
+        </marquee>
+    </div>
+
+    <!-- Main navigation bar -->
+    <nav class="navbar">
+        <div class="logo"><img src="img/beaukind logo nav.svg" alt=""></div>
+        <ul class="nav-links">
+            <li><a href="#section1" class="nav-link">Home</a></li>
+            <li><a href="#section2" class="nav-link">About</a></li>
+            <li><a href="#section3" class="nav-link">Products</a></li>
+            <li><a href="#section4" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </nav>
+
+    <section class="product-section content-section" id="section3">
+
+        <div class="propage">
+            <div class="propage-part-one">
+                <img src="img/sempleProductpage.jpg" alt="">
+            </div>
+            <div class="propage-part-two">
+                <div class="propage-prodetails">
+                    <div class="propage-flex-incard">
+                        <h1>Product name</h1>
+                        <h3>₹10000.00</h3>
+                    </div>
+                    <div class="stars">
+                        <lord-icon src="https://cdn.lordicon.com/edplgash.json" trigger="loop" delay="2000"
+                            state="hover-wink" style="width:30px;height:30px">
+                        </lord-icon>
+                        <lord-icon src="https://cdn.lordicon.com/edplgash.json" trigger="loop" delay="2000"
+                            state="hover-wink" style="width:30px;height:30px">
+                        </lord-icon>
+                        <lord-icon src="https://cdn.lordicon.com/edplgash.json" trigger="loop" delay="2000"
+                            state="hover-wink" style="width:30px;height:30px">
+                        </lord-icon>
+                        <lord-icon src="https://cdn.lordicon.com/edplgash.json" trigger="loop" delay="2000"
+                            state="hover-wink" style="width:30px;height:30px">
+                        </lord-icon>
+                        <lord-icon src="https://cdn.lordicon.com/edplgash.json" trigger="hover"
+                            colors="primary:#eeca66,secondary:#3a3347,tertiary:#ebe6ef" style="width:30px;height:30px">
+                        </lord-icon>
+                        (60)
+                    </div>
+                </div>
+                <div class="propage-prodetails">
+                    <h3>Description</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                        to make a type specimen
+                        book.</p>
+                </div>
+                <div class="propage-prodetails">
+                    <h3>Quanity</h3>
+                    <p>50ml</p>
+                </div>
+
+                <div class="propage-prodetails">
+                    <form action="">
+                        <div class="propage-pro-quentity">
+                            <button class="propage-qty-btn" id="qty-decrease-btn" onclick="decrease()">
+                                <lord-icon src="https://cdn.lordicon.com/rypcsrlk.json" trigger="click" stroke="bold"
+                                    state="hover-swirl" colors="primary:#ffffff,secondary:#ffffff"
+                                    style="width:30px;height:30px" >
+                                </lord-icon>
+                            </button>
+                            <input type="number" id="quantity" value="1" readonly>
+                            <button class="propage-qty-btn" id="qty-increase-btn" onclick="increase()">
+                                <lord-icon src="https://cdn.lordicon.com/sbnjyzil.json" trigger="click" stroke="bold"
+                                    state="hover-swirl" colors="primary:#ffffff,secondary:#ffffff"
+                                    style="width:30px;height:30px">
+                                </lord-icon>
+                            </button>
+                        </div>
+                        <button type="submit" class="propage-addtocart">
+                            <lord-icon src="https://cdn.lordicon.com/hcgabluf.json" trigger="morph" state="morph-fill"
+                                style="width:30px;height:30px">
+                            </lord-icon>
+                            Add to cart
+                        </button>
+                    </form>
+                </div>
+                <div class="propage-prodetails">
+                    <h3>Free shipping above Rs. 200/-</h3>
+                    <h3>Dispatched within 4-5 days</h3>
+
+                </div>
+            </div>
+        </div>
+        <div class="propage propage-two">
+
+            <div class="propage-prodetails">
+                <h3>Ingredients:</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen
+                    book.</p>
+
+            </div>
+            <div class="propage-prodetails">
+                <h3>How to use:</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen
+                    book.</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+        <div class="section-title-section">
+            <h1>You may also like-</h1>
+        </div>
+        <hr>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="img/products (1).jpg" alt="">
+                <i>Product name</i>
+                <p>Description</p>
+                <button>
+                    <lord-icon src="https://cdn.lordicon.com/hcgabluf.json" trigger="morph" state="morph-fill"
+                        style="width:30px;height:30px">
+                    </lord-icon>
+                    Add to cart
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="img/products (2).jpg" alt="">
+                <i>Product name</i>
+                <p>Description</p>
+                <button>
+                    <lord-icon src="https://cdn.lordicon.com/hcgabluf.json" trigger="morph" state="morph-fill"
+                        style="width:30px;height:30px">
+                    </lord-icon>
+                    Add to cart
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="img/products (3).jpg" alt="">
+                <i>Product name</i>
+                <p>Description</p>
+                <button>
+                    <lord-icon src="https://cdn.lordicon.com/hcgabluf.json" trigger="morph" state="morph-fill"
+                        style="width:30px;height:30px">
+                    </lord-icon>
+                    Add to cart
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="img/products (1).jpg" alt="">
+                <i>Product name</i>
+                <p>Description</p>
+                <button>
+                    <lord-icon src="https://cdn.lordicon.com/hcgabluf.json" trigger="morph" state="morph-fill"
+                        style="width:30px;height:30px">
+                    </lord-icon>
+                    Add to cart
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="img/products (2).jpg" alt="">
+                <i>Product name</i>
+                <p>Description</p>
+                <button>
+                    <lord-icon src="https://cdn.lordicon.com/hcgabluf.json" trigger="morph" state="morph-fill"
+                        style="width:30px;height:30px">
+                    </lord-icon>
+                    Add to cart
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer-logo-content">
+            <div class="footer-logo">
+                <img src="img/BeaukindLogo.svg" alt="">
+                <img src="img/BeaukindFootericon.svg" alt="">
+            </div>
+            <h1>“Redefining LuxuryIn <br> Beauty.”</h1>
+        </div>
+        <div class="footer-col">
+
+            <h3><i>Main Links</i></h3>
+            <p>Home</p>
+            <p>About</p>
+            <p>Beingkind</p>
+            <p>Beaukind</p>
+            <p>Products</p>
+
+        </div>
+        <div class="footer-col">
+
+            <h3><i>Other Links</i></h3>
+            <p>Privacy policy</p>
+            <p>Terms & Co.</p>
+            <p>Return policy</p>
+            <p>Exchange policy</p>
+            <p>Refund policy</p>
+
+        </div>
+
+        <div class="footer-contect">
+            <h3><i>Subscribe our newsletter</i></h3>
+            <form action="">
+                <input type="email" placeholder="Text here">
+                <button>Subscribe</button>
+            </form>
+            <h3><i>Social</i></h3>
+            <div class="footer-social-media-links">
+                <img src="img/Social Icons.svg" alt="">
+                <img src="img/Social Icons (1).svg" alt="">
+                <img src="img/Social Icons (2).svg" alt="">
+                <img src="img/Social Icons (3).svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #eee;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    z-index: 1000;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+.nav-link.active {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.content-section {
+    height: 100vh;
+    padding: 2rem;
+    border: 1px solid #000000;
+}

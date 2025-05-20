@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beaukind Navbar</title>
+    <link rel="stylesheet" href="landingpage.css" />
+    <link rel="stylesheet" href="productpage.css" />
+    <link rel="stylesheet" href="cartpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- Scrolling announcement bar -->
+    <div class="announcement">
+        <marquee behavior="scroll" direction="left">
+            &#9733; 20% Discount on all products for first orders &#9733;
+            20% Discount on all products for first orders &#9733;
+        </marquee>
+    </div>
+
+    <!-- Main navigation bar -->
+    <nav class="navbar">
+        <div class="logo"><img src="img/beaukind logo nav.svg" alt=""></div>
+        <ul class="nav-links">
+            <li><a href="#section1" class="nav-link">Home</a></li>
+            <li><a href="#section2" class="nav-link">About</a></li>
+            <li><a href="#section3" class="nav-link">Products</a></li>
+            <li><a href="#section4" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </nav>
+
+
+    <section class="cartpage">
+        <div class="section-title-section">
+            <h1>Your Cart</h1>
+        </div>
+        <div class="cart-content">
+            <div class="cart-content-part-one">
+                <div class="cart-items">
+                    <button>X</button>
+                    <div class="product-in-cart">
+                        <img src="img/sempleProductpage.jpg" alt="">
+                        <p>Product Name</p>
+                        <p>Produt Name</p>
+                    </div>
+                    <div class="product-cart-price">
+                        <p>Rs.1000000.00</p>
+                    </div>
+                    <div class="product-cart-quentity">
+                        <button class="propage-qty-btn" id="qty-decrease-btn" onclick="decrease()">
+                            <lord-icon src="https://cdn.lordicon.com/rypcsrlk.json" trigger="click" stroke="bold"
+                                state="hover-swirl" colors="primary:#ffffff,secondary:#ffffff"
+                                style="width:30px;height:30px">
+                            </lord-icon>
+                        </button>
+                        <input type="number" id="quantity" value="1" readonly>
+                        <button class="propage-qty-btn" id="qty-increase-btn" onclick="increase()">
+                            <lord-icon src="https://cdn.lordicon.com/sbnjyzil.json" trigger="click" stroke="bold"
+                                state="hover-swirl" colors="primary:#ffffff,secondary:#ffffff"
+                                style="width:30px;height:30px">
+                            </lord-icon>
+                        </button>
+                    </div>
+                    <div class="cart-total-price">
+                        Rs.111100/-
+                    </div>
+
+                </div>
+            </div>
+            <div class="cart-content-part-two">
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer-logo-content">
+            <div class="footer-logo">
+                <img src="img/BeaukindLogo.svg" alt="">
+                <img src="img/BeaukindFootericon.svg" alt="">
+            </div>
+            <h1>“Redefining LuxuryIn <br> Beauty.”</h1>
+        </div>
+        <div class="footer-col">
+
+            <h3><i>Main Links</i></h3>
+            <p>Home</p>
+            <p>About</p>
+            <p>Beingkind</p>
+            <p>Beaukind</p>
+            <p>Products</p>
+
+        </div>
+        <div class="footer-col">
+
+            <h3><i>Other Links</i></h3>
+            <p>Privacy policy</p>
+            <p>Terms & Co.</p>
+            <p>Return policy</p>
+            <p>Exchange policy</p>
+            <p>Refund policy</p>
+
+        </div>
+
+        <div class="footer-contect">
+            <h3><i>Subscribe our newsletter</i></h3>
+            <form action="">
+                <input type="email" placeholder="Text here">
+                <button>Subscribe</button>
+            </form>
+            <h3><i>Social</i></h3>
+            <div class="footer-social-media-links">
+                <img src="img/Social Icons.svg" alt="">
+                <img src="img/Social Icons (1).svg" alt="">
+                <img src="img/Social Icons (2).svg" alt="">
+                <img src="img/Social Icons (3).svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

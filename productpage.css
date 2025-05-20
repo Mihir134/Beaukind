@@ -1,0 +1,165 @@
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.propage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.propage-two {
+    padding: 0px;
+    padding-bottom: 50px;
+}
+
+.propage-part-one {
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.propage-part-one img {
+    width: auto;
+    height: 620px;
+    object-fit: contain;
+    border-radius: 10px;
+
+}
+
+.propage-part-two {
+    display: grid;
+}
+
+
+
+.propage-prodetails {
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.propage-flex-incard {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.propage-flex-incard h1 {
+    font-size: xx-large;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+}
+
+/* propage form  */
+
+.propage-prodetails form {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.propage-pro-quentity {
+    display: flex;
+    align-items: center;
+}
+
+.propage-prodetails form button,
+.propage-prodetails form input {
+    padding: 10px 20px;
+    font-size: larger;
+    border-radius: 10px;
+    
+}
+
+.propage-prodetails form input {
+    width: 70px;
+    text-align: center;
+}
+
+.propage-prodetails form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #29363A; */
+    color: white;
+    font-size: x-large;
+    text-wrap: nowrap;
+    border: 0px solid;
+    gap: 5px;
+    
+}
+.propage-qty-btn{
+    background-color: #29363A;
+}
+
+.propage-addtocart{
+    background-color: #29363ae0;
+}
+
+.propage-addtocart:hover{    
+    background-color: #29363A;
+
+}
+
+.propage-qty-btn{
+    padding: 0px;
+}
+
+@media screen and (max-width:770px) {
+    .propage {
+        grid-template-columns: 1fr;
+    }
+
+    .propage-part-two {
+
+        /* margin: 20px; */
+        width: auto;
+
+    }
+
+    .propage-part-one {
+        /* margin: 20px; */
+    }
+
+    .propage-prodetails {
+
+        align-self: center;
+        /* margin: 20px; */
+    }
+
+    .propage-part-one img {
+        width: 340px;
+
+    }
+
+    .propage-prodetails form{
+        justify-content: center;
+    }
+}
