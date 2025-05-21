@@ -31,7 +31,8 @@
             <li><a href="#section4" class="nav-link">Contact</a></li>
         </ul>
         <div class="icons">
-            <i class="fas fa-search"></i>
+            <input type="text" class="nav-search-input" id="nav-search-input" placeholder="Search Product...">
+            <i class="fas fa-search" id="nav-search-btn"></i>
             <i class="fas fa-user"></i>
             <i class="fas fa-shopping-cart"></i>
         </div>
@@ -45,38 +46,72 @@
         <div class="cart-content">
             <div class="cart-content-part-one">
                 <div class="cart-items">
-                    <button>X</button>
+                    <button class="cart-remove-pro">
+                        <lord-icon src="https://cdn.lordicon.com/rypcsrlk.json" trigger="morph" stroke="bold"
+                            colors="primary:#ffffff,secondary:#ffffff" style="width:30px;height:100%">
+                        </lord-icon>
+                    </button>
                     <div class="product-in-cart">
                         <img src="img/sempleProductpage.jpg" alt="">
-                        <p>Product Name</p>
-                        <p>Produt Name</p>
+                        <div class="product-in-cart-name">
+                            <h3>Product Name</h3>
+                            <p>Produt Name</p>
+                        </div>
                     </div>
                     <div class="product-cart-price">
-                        <p>Rs.1000000.00</p>
+                        <h4>Rs.1000000.00</h4>
                     </div>
-                    <div class="product-cart-quentity">
-                        <button class="propage-qty-btn" id="qty-decrease-btn" onclick="decrease()">
-                            <lord-icon src="https://cdn.lordicon.com/rypcsrlk.json" trigger="click" stroke="bold"
-                                state="hover-swirl" colors="primary:#ffffff,secondary:#ffffff"
-                                style="width:30px;height:30px">
-                            </lord-icon>
-                        </button>
-                        <input type="number" id="quantity" value="1" readonly>
-                        <button class="propage-qty-btn" id="qty-increase-btn" onclick="increase()">
-                            <lord-icon src="https://cdn.lordicon.com/sbnjyzil.json" trigger="click" stroke="bold"
-                                state="hover-swirl" colors="primary:#ffffff,secondary:#ffffff"
-                                style="width:30px;height:30px">
-                            </lord-icon>
-                        </button>
-                    </div>
+                    <form action="" class="product-quentity">
+                        <div class="propage-pro-quentity">
+                            <button class="propage-qty-btn" id="qty-decrease-btn" onclick="decrease()">
+                                <lord-icon src="https://cdn.lordicon.com/rypcsrlk.json" trigger="click" stroke="bold"
+                                    state="hover-swirl" colors="primary:#ffffff,secondary:#ffffff"
+                                    style="width:30px;height:30px">
+                                </lord-icon>
+                            </button>
+                            <input type="number" id="quantity" value="1" readonly>
+                            <button class="propage-qty-btn" id="qty-increase-btn" onclick="increase()">
+                                <lord-icon src="https://cdn.lordicon.com/sbnjyzil.json" trigger="click" stroke="bold"
+                                    state="hover-swirl" colors="primary:#ffffff,secondary:#ffffff"
+                                    style="width:30px;height:30px">
+                                </lord-icon>
+                            </button>
+                        </div>
+                    </form>
                     <div class="cart-total-price">
-                        Rs.111100/-
+                        <h4>Rs.111100/-</h4>
                     </div>
 
                 </div>
             </div>
             <div class="cart-content-part-two">
-
+                <div class="cart-order-summary">
+                    <h2>Order Summary</h2>
+                    <div>
+                        <h3>Sub total:</h3>
+                        <p class="cart-summary-price">Rs.00</p>
+                    </div>
+                    <div>
+                        <h3>Shipping charges:</h3>
+                        <p class="cart-summary-price">Rs.00</p>
+                    </div>
+                    <div>
+                        <h3>Discount:</h3>
+                        <p class="cart-summary-price">Rs.00</p>
+                    </div>
+                    <div>
+                        <h3>Add coupon code:</h3>
+                        <div>
+                            <input type="text" class="cart-coupon">
+                            <button>></button>
+                        </div>
+                    </div>
+                    <div class="cart-total">
+                        <h3>Total:</h3>
+                        <p class="cart-summary-price">Rs.00</p>
+                    </div>
+                    <button class="check-out-btn">Checkout</button>
+                </div>
             </div>
         </div>
     </section>
